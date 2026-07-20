@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome - Premium Hotels</title>
+    <meta name="description" content="Log in or register to discover premium hotel listings and book your next dream vacation.">
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+
+    <div class="auth-wrapper">
+        <!-- Login Form -->
+        <div class="auth-card" id="login-card">
+            <h2>Welcome back</h2>
+            <p class="subtitle">Log in to discover premium stays.</p>
+            
+            <form id="login-form">
+                <div class="form-group">
+                    <label class="form-label" for="login-email">Email</label>
+                    <input type="email" id="login-email" class="form-control" placeholder="name@example.com" required>
+                </div>
+                <div class="form-group">
+                    <label class="form-label" for="login-password">Password</label>
+                    <input type="password" id="login-password" class="form-control" placeholder="••••••••" required>
+                </div>
+                <div id="login-error" class="error-msg"></div>
+                <button type="submit" class="btn-primary" style="margin-top: 1rem;">Log In</button>
+            </form>
+
+            <div class="auth-switch">
+                Don't have an account? <a href="#" id="show-register">Sign up</a>
+            </div>
+        </div>
+
+        <!-- Register Form (Hidden by default) -->
+        <div class="auth-card" id="register-card" style="display: none;">
+            <h2>Create an account</h2>
+            <p class="subtitle">Join us to unlock exclusive getaways.</p>
+            
+            <form id="register-form">
+                <div class="form-group">
+                    <label class="form-label" for="register-email">Email</label>
+                    <input type="email" id="register-email" class="form-control" placeholder="name@example.com" required>
+                </div>
+                <div class="form-group">
+                    <label class="form-label" for="register-password">Password</label>
+                    <input type="password" id="register-password" class="form-control" placeholder="Create a password" required>
+                </div>
+                <div class="form-group">
+                    <label class="form-label" for="register-confirm">Confirm Password</label>
+                    <input type="password" id="register-confirm" class="form-control" placeholder="Confirm password" required>
+                </div>
+                <div id="register-error" class="error-msg"></div>
+                <button type="submit" class="btn-primary" style="margin-top: 1rem;">Sign Up</button>
+            </form>
+
+            <div class="auth-switch">
+                Already have an account? <a href="#" id="show-login">Log in</a>
+            </div>
+        </div>
+    </div>
+
+    <script src="/js/auth.js"></script>
+</body>
+</html>

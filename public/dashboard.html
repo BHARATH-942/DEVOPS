@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Premium Hotels</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="brand">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="var(--primary-color)" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 2L2 10.89V22H10V15H14V22H22V10.89L12 2Z" />
+                </svg>
+                Premium Stays
+            </div>
+            <div>
+                <button id="logout-btn" class="btn-outline">Log Out</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="container">
+        <header class="dashboard-header">
+            <h1>Discover your next adventure</h1>
+            <p>Explore our curated list of exclusive properties around the world.</p>
+        </header>
+
+        <!-- Loading State -->
+        <div id="loader" class="loader-container">
+            <div class="loader"></div>
+        </div>
+
+        <!-- Hotels Grid -->
+        <div id="hotel-grid" class="hotel-grid" style="display: none;">
+            <!-- Hotel cards will be injected here by JS -->
+        </div>
+    </main>
+
+    <script src="/js/dashboard.js"></script>
+</body>
+</html>
